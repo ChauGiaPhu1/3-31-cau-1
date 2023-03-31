@@ -1,0 +1,21 @@
+#inclue<stdio.h>
+#inclue<conio.h>
+float tinh(float x,int n)
+{
+if(n==0)
+return 0;
+if(n==1)
+return x
+return(1+x/n) *tinh(x,n-1)-x/n *tinh(x,n-2);
+}
+int main()
+{
+float x;
+int n;
+printf(''\nnhap x:'') scanf (''%f'',&x);
+printf(''\nnhap n:'') scanf (''%d'',&n);
+float kq= tinh(x,n);
+printf(''\nket qua=%2f'',kq);
+getch()
+return 0;
+}
